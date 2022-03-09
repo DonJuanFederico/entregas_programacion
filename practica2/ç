@@ -1,0 +1,30 @@
+package mates;
+
+import java.lang.Math;
+import aplicacion.*;
+import java.util.Random;
+
+public class Matematicas{
+	private int rango = 1;
+	public static double generarNumeroPiIterativo(int numeroDeDardos){
+		int memoria = numeroDeDardos;
+		int dardosDentro = 0;
+		while(0 <= memoria){
+			double x = 1000 - (math.random() * 2001);
+			double y = 1000 - (math.random() * 2001);
+			if( x + y <= 1){  
+				dardosDentro = dardosDentro + 1;
+			}
+			memoria = memoria - 1;
+
+		}
+		double bd = (4*dardosDentro/numeroDeDardos);
+		return bd;
+	}
+	/*public static double random(int dimensionDelCirculo) {  // no es string es double si eso
+		double max = dimensionDelCirculo;
+		double randFromDouble = Math.random();
+		double actualRandomDec = randFromDouble * max;
+		return actualRandomDec;*/
+	//}
+}
